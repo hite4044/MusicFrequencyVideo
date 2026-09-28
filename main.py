@@ -252,9 +252,9 @@ if __name__ == "__main__":
     visual_group.add_argument("-b", "--bars", type=int, default=20, help="频谱条数量")
     visual_group.add_argument("-w", "--width", type=int, default=40, help="单个条形宽度 (像素)")
     visual_group.add_argument("-g", "--gap", type=int, default=10, help="条形间距 (像素)")
-    visual_group.add_argument("--smooth", type=float, default=0.3,
+    visual_group.add_argument("--smooth", type=float, default=0.2,
                               help="条形高度平滑系数 (0.1-0.9, 频谱条本身的高度缩放)")
-    visual_group.add_argument("--range-smooth", type=float, default=0.05,
+    visual_group.add_argument("--range-smooth", type=float, default=0.1,
                               help="动态缩放范围平滑系数 (0.01-0.2, 频谱条高度根据时间的缩放, 越小对比度越强且延迟越高)")
 
     # ============ 外观设置 ============
